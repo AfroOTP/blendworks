@@ -1,0 +1,43 @@
+.main {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.top_title {
+  font-size: 2rem;
+}
+
+.foodmenu_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.foodmenu_item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 450px;
+	margin: 0 auto 40px auto;
+	padding-left: 10px;
+}
+
+
+.foodmenu_item_text {
+	font-size: 1.5rem;
+}
+
+.foodmenu_item_dot {
+  flex-grow: 1;
+  height: 6px;
+  background-image: radial-gradient(circle, #c61515 2px, transparent 2px);
+  background-size: 10px 4px;
+  background-repeat: repeat-x;
+  background-position: center;
+  margin: 0 10px;
+}
+
+.foodmenu_item_price {
+font-size: 1rem;
+}

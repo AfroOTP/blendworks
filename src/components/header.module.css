@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header_flex {
+    display: flex;
+}
+
+.header_logo {
+    margin: auto;
+}
+
+.header_logo_image {
+    aspect-ratio: 16 / 9;
+    mix-blend-mode: multiply;
+}
+
+.header_flexend {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+}
+
+.header_item {
+    padding: 20 40;
+}
+.header_item:last-child {
+    padding: 20 40;
+    margin-right: 40px;
+}

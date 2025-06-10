@@ -1,0 +1,16 @@
+.footermain {
+    display: flex;
+    position: relative;
+}
+
+.footer_image {
+    width: 100%;
+}
+
+.footer_copyright {
+    position: absolute;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translate( -50%,-50% );
+    top: 50%;
+}
