@@ -1,7 +1,6 @@
 "use client";
 
 import Link from 'next/link'
-import Head from 'next/head'
 import styles from "./page.module.css"
 
 import { useEffect } from "react"
@@ -18,9 +17,6 @@ export default function Thanks() {
 
   return(
     <>
-      <Head>
-        <meta name="robots" content="noindex" />
-      </Head>
       <Header/>
       <div className={styles.main_thanks}>
         <h1 className={styles.complate_message}>お問い合わせの送信が完了しました。</h1>
