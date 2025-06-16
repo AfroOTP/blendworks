@@ -1,5 +1,5 @@
-:root {
-    --header-height: 80px;
+:global(:root) {
+    --your-variable: value;
 }
 
 .header {
