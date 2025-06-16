@@ -16,11 +16,13 @@ a {
 html {
   scroll-behavior: smooth;
   background-color: transparent !important;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-noto-sans-jp), sans-serif;
   background-color: transparent !important;
+  overflow-x: hidden;
 }
 
 #main, #about {
