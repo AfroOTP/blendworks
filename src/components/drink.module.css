@@ -1,6 +1,6 @@
 .main {
-	margin: 0 auto;
-	max-width: 1000px;
+	margin: auto;
+	max-width: 1200px;
 }
 
 .top_title {
@@ -24,7 +24,7 @@
 }
 
 .drinkmenu_item_text {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .drinkmenu_item_dot {
@@ -39,4 +39,26 @@
 
 .drinkmenu_item_price {
 	font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+	.top_title {
+		font-size: 1.5rem;
+	}
+
+	.drinkmenu_item {
+		width: 350px;
+	}
+
+	.drinkmenu_item_text {
+		font-size: 1.1rem;
+	}
+
+	.drinkmenu_item_price {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 375px) {
+
 }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from "./page.module.css"
 
 import { useEffect } from "react"
-import { Head } from "../../components/head"
+import Header from "../../components/header"
 
 export default function Thanks() {
   useEffect(() => {
@@ -17,21 +17,12 @@ export default function Thanks() {
 
   return(
     <>
-      <Head
-        title="thank you"
-        description="このページは検索エンジンにインデックスされません"
-        noIndex={true}
-      />
+      <Header/>
       <div className={styles.main_thanks}>
         <h1 className={styles.complate_message}>お問い合わせの送信が完了しました。</h1>
-        <h2 className={styles.thanks_message}>このたびは、株式会社○○○○へお問い合わせ頂き誠にありがとうございます。
-        <br />お送り頂きました内容を確認の上、○営業日以内に折り返しご連絡させて頂きます。
+        <h2 className={styles.thanks_message}>このたびは、BlendWorksへお問い合わせ頂き誠にありがとうございます。
+        <br />お送り頂きました内容を確認の上、7営業日以内に折り返しご連絡させて頂きます。
         </h2>
-        <div className={styles.top_link_container}>
-          <Link href="./">
-            <button type="submit" className={styles.top_link}>TOP</button>
-          </Link>
-        </div>
       </div>
     </>
   )
