@@ -1,7 +1,7 @@
 .footermain {
     display: flex;
     position: relative;
-    height: 150;
+    height: 150px;
     background-color: rgb(254, 248, 225);
 }
 
