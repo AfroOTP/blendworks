@@ -1,6 +1,8 @@
 'use client';
 import styles from "./page.module.css"
-import Link from 'next/link';
+import Link from 'next/link'
+import Header from '../../components/header'
+import { FadeInSection } from '../../components/FadeInSection';
 
 import { useRouter } from 'next/navigation';
 import { useForm  } from 'react-hook-form'
@@ -37,6 +39,9 @@ export default function Contact() {
 
   return (
     <>
+      <Header></Header>
+      <div className={styles.background}/>
+      <FadeInSection>
       <main className={styles.main}>
         <h1 className={styles.title}>CONTACT</h1>
         <p className={styles.title_ruby}>お問い合わせ</p>
@@ -45,41 +50,6 @@ export default function Contact() {
           <p>通常、3営業日以内にご連絡させていただきます。</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className={errors.radio ? styles.radiobutton_container_wrap_error : styles.radiobutton_container_wrap}>
-            <p className={errors.radio ? styles.radiobutton_title_error : styles.radiobutton_title}>項目 (必須)</p>
-            <div className={styles.radiobutton_wrap}>
-              <div className={styles.radiobutton_gap}>
-                <input  type="radio"
-                        id="radio1"
-                        value="ウェブサイト制作のご相談"
-                        {...register('radio',
-                        {required: '必須'})}
-                />
-                <label className={styles.radiobutton_name} htmlFor="radio1">ウェブサイト制作のご相談</label>
-              </div>
-              <div className={styles.radiobutton_gap}>
-                <input  type="radio"
-                        id="radio2"
-                        value="DiscordBot制作のご相談"
-                        {...register('radio',
-                        {required: '必須'})}
-                />
-                <label className={styles.radiobutton_name} htmlFor="radio2">DiscordBot制作のご相談</label>
-              </div>
-              <div className={styles.radiobutton_gap}>
-                <input  type="radio"
-                        id="radio3"
-                        value="その他"
-                        {...register('radio',
-                        {required: '必須'})}
-                />
-                <label className={styles.radiobutton_name} htmlFor="radio3">その他</label>
-              </div>
-              {errors.radio &&
-                  <span className={styles.error_text}>※入力必須です</span>
-              }
-            </div>
-          </div>
           <div className={errors.name ? styles.form_wrap_error : styles.form_wrap}>
             <label className={styles.formtitle} htmlFor="name">お名前（必須）</label>
             <input className={styles.formbox}
@@ -107,13 +77,6 @@ export default function Contact() {
             {errors.furigana &&
               <span className={styles.error_text}>※入力必須です</span>
             }
-          </div>
-          <div className={styles.form_wrap}>
-            <label className={styles.formtitle} htmlFor="company">会社名、屋号</label>
-            <input className={styles.formbox}
-              id="company"
-              {...register('company')}
-            />
           </div>
           <div className={errors.mail ? styles.form_wrap_error : styles.form_wrap}>
             <label className={styles.formtitle} htmlFor="mail">メールアドレス（必須）</label>
@@ -169,6 +132,7 @@ export default function Contact() {
           </div>
         </form>
       </main>
+      </FadeInSection>
     </>
   )
 }

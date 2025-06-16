@@ -22,3 +22,7 @@ body {
   font-family: var(--font-noto-sans-jp), sans-serif;
   background-color: transparent !important;
 }
+
+#main, #about {
+  scroll-margin-top: 25px;
+}

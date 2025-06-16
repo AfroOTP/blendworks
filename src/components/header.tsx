@@ -8,21 +8,21 @@ export default function Header() {
 			<div className={styles.header_flex}>
 				<div className={styles.header_logo}>
 					<a href='/#main'>
-						<Image src='/img/logo-wis-photoroom.png' className={styles.header_logo_image } alt='logo' width={192} height={108} ></Image>
+						<Image src='/img/logo-wis-photoroom_header.png' className={styles.header_logo_image } alt='logo' width={128} height={72} ></Image>
 					</a>
 				</div>
 				<div className={styles.header_flexend}>
 					<div className={styles.header_item}>
-						<a href='/#news'>news</a>
+						<a href='/#news' className={styles.header_item_text}>news</a>
 					</div>
 					<div className={styles.header_item}>
-						<a href='/#about'>about</a>
+						<a href='/#about' className={styles.header_item_text}>about</a>
 					</div>
 					<div className={styles.header_item}>
-						<a href='/#menu'>menu</a>
+						<a href='/#menu' className={styles.header_item_text}>menu</a>
 					</div>
 					<div className={styles.header_item}>
-						<a href='/#contact'>contact</a>
+						<a href='/#contact' className={styles.header_item_text}>contact</a>
 					</div>
 				</div>
 			</div>

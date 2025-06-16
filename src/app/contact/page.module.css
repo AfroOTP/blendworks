@@ -1,17 +1,34 @@
-.main_wrap {
-  max-width: 777px;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/tennai.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
+
+.main_wrap {
+  max-width: 1200px;
+}
+
 .main {
-  width: 50%;
-  max-width: 777px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 200px auto 200px auto;
+  background-color: rgb(254, 248, 225);
+  border-radius: 30px;
+  padding: 100px 220px 100px 230px;
+  color: #492c00;
 }
 
 .title {
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin-top: 247px;
+  color:#492c00;
 }
 
 .title_ruby {
@@ -22,7 +39,7 @@
 
 .contacttextbox {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .contacttext {
@@ -38,7 +55,7 @@
 }
 .radiobutton_container_wrap_error {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 70px;
   display: flex;
   gap: 40px;
   margin-bottom: 18px;
@@ -108,8 +125,7 @@
 
 .formbox {
   height: 3rem;
-  background-color: #ffffff;
-  border: 1px solid #2A2828;
+  border: 1px solid #492c00;
   border-radius: 5px;
   width: 100%;
 }
@@ -117,8 +133,7 @@
 .formtextbox {
   resize: none;
   height: 10rem;
-  background-color: #ffffff;
-  border: 1px solid #2A2828;
+  border: 1px solid #492c00;
   border-radius: 5px;
   width: 100%;
 }
@@ -152,38 +167,39 @@
 .confirmation_container {
   width: 27%;
   margin: 40px auto;
-  margin-bottom: 200px;
 }
 
 .confirmation {
   display: flex;
-  padding: 25px;
+  padding: 20px;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  background-color: #222222;
-  border: 2px #000000;
+  background-color: #492c00 !important;
+  border: 1px solid #000000;
   border-radius: 3rem;
-  color: #ffffff;
+  color: rgb(255, 249, 229);
+  cursor: pointer;
 }
 .confirmation:active {
   transform: scale(.98);
 }
 .confirmation:hover {
   display: flex;
-  padding: 25px;
+  padding: 20px;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  background-color: #494949;
-  border: 2px #000000;
+  background-color: #494949 !important;
+  border: 1px solid #000000;
   border-radius: 3rem;
-  color: #ffffff;
+  color: rgb(255, 249, 229);
 }
+
 
 .link_wrap {
   display: flex;
