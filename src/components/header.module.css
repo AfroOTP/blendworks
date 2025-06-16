@@ -48,10 +48,6 @@
 }
 
 @media (max-width: 375px) {
-    :root {
-        --header-height: 60px;
-    }
-
     .header {
         height: var(--header-height);
     }
