@@ -2,7 +2,6 @@
 
 import React, { ReactNode, CSSProperties } from 'react';
 import { useScrollAnimation, UseScrollAnimationOptions } from '../../src/hooks/useScrollAnimation';
-import { transform } from 'next/dist/build/swc/generated-native';
 
 type AnimationDirection = 'up' | 'down' | 'left' | 'right' | 'fade';
 
