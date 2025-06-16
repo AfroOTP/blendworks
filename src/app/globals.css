@@ -26,3 +26,13 @@ body {
 #main, #about {
   scroll-margin-top: 25px;
 }
+
+:root {
+    --header-height: 80px;
+}
+
+@media (max-width: 375px) {
+    :root {
+        --header-height: 60px;
+    }
+}
