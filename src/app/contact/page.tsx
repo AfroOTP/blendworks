@@ -20,11 +20,8 @@ type FormValues = {
 export default function Contact() {
   const { register,
           handleSubmit,
-          getValues,
           formState: {
             errors,
-            isValid,
-            isSubmitting
           }} = useForm<FormValues>();
   const router = useRouter();
 
