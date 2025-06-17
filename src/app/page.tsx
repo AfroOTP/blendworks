@@ -28,10 +28,10 @@ export default function Home() {
               <div className={styles.infomation_top_text_right}></div>
               <div className={styles.infomation_top_title}>お知らせ</div>
               <ul className={styles.infomation_top_list}>
-                <li className={styles.infomation_top_list_text}>111</li>
-                <li className={styles.infomation_top_list_text}>222222222222</li>
-                <li className={styles.infomation_top_list_text}>333333</li>
-                <li className={styles.infomation_top_list_text}>4444444444444444444</li>
+                <li className={styles.infomation_top_list_text}>今月の営業日</li>
+                <li className={styles.infomation_top_list_text}>シングルオリジン豆入荷</li>
+                <li className={styles.infomation_top_list_text}>季節の限定メニュー登場</li>
+                <li className={styles.infomation_top_list_text}>権三郎の一言</li>
               </ul>
             </div>
           </FadeInSection>
@@ -57,8 +57,15 @@ export default function Home() {
           <div className={styles.about_container}></div>
           <Image src='/img/coffe.png' className={styles.about_image} width={1408} height={768} alt='cafe_img'></Image>
           <div className={styles.about_text_wrap}>
-            <p className={styles.about_title}>title</p>
-            <p className={styles.about_text}>text</p>
+            <p className={styles.about_title}>BLENDとは</p>
+            <p className={styles.about_text}>BlendWorksの珈琲は特別だ。<br/>
+                                            豆の産地は世界中だが、焙煎は一点の雑味も許さぬ精度で行われる。ひとつの豆が持つ物語を、もう一つの豆と結び合わせ、ひとつの香りとする。
+                                            その技はまるで、人と人との関係を静かに、しかし確かに結び直すような、禅にも似た行い。
+                                            客が席につくと、森山が静かに問う。<span className={styles.about_time}><br/>「今日は、どんな一日でしたか」<br/></span>
+                                            その一言をもとに、豆の種類、挽き方、温度、抽出時間を全て変え、その人だけのブレンドを作り出す。
+                                            「心の隙間に、一杯の珈琲が入れば、それでいい」
+                                            彼はそう言うが、何かを癒やされた客たちは口を揃えて言う。
+                                            「あの人は、心のブレンドマスターだ」と。</p>
           </div>
         </FadeInSection>
         <FadeInSection direction="fade" delay={0.1} className={styles.drink_container} options={{ threshold: 0.0 }} >
@@ -66,18 +73,19 @@ export default function Home() {
           <div className={styles.catch_drink_wrap}>
             <div className={styles.catch_drink_item}>
               <Image src='/img/drink/Gilded Whispers Latte.png' className={styles.catch_drink_image} width={365} height={199} alt='Gilded Whispers Latte'></Image>
-              <p className={styles.catch_drink_name}>aaaaaa</p>
-              <p className={styles.catch_drink_text}>eeeeeeee</p>
+              <p className={styles.catch_drink_name}>木洩れ日ラテ</p>
+              <p className={styles.catch_drink_text}>「光は、静けさの中で一番よく見える。」<br/>自家焙煎ブレンドに低温スチームミルク合わせた一品。やわらかな光が注ぐような優しい口あたり。</p>
             </div>
             <div className={styles.catch_drink_item}>
               <Image src='/img/drink/Opera Rouge Fizz.png' className={styles.catch_drink_image} width={365} height={199} alt='Opera Rouge Fizz'></Image>
-              <p className={styles.catch_drink_name}>aaaaaa</p>
-              <p className={styles.catch_drink_text}>eeeeeeee</p>
+              <p className={styles.catch_drink_name}>霧雨ラベンダーソーダ</p>
+              <p className={styles.catch_drink_text}>「晴れなくても、落ち着ける味。」<br/>ラベンダーの香りにレモン、そして色鮮やかな紫蘇シロップを使用した、雨上がりの香りを閉じ込めたような静かな炭酸。</p>
             </div>
             <div className={styles.catch_drink_item}>
               <Image src='/img/drink/Velour Matcha Allure.png' className={styles.catch_drink_image} width={365} height={199} alt='Velour Matcha Allure'></Image>
-              <p className={styles.catch_drink_name}>aaaaaa</p>
-              <p className={styles.catch_drink_text}>eeeeeeee</p>
+              <p className={styles.catch_drink_name}>薄明抹茶オレ</p>
+              <p className={styles.catch_drink_text}>「静けさが染み込むような、温かい余白。」<br/>抹茶・自家製の白味噌シロップ・スチームミルク
+                                                    淡く塩気を帯びた白味噌が、抹茶の苦みと絶妙に調和。</p>
             </div>
           </div>
           <Drink></Drink>
@@ -87,18 +95,18 @@ export default function Home() {
           <div className={styles.catch_food_wrap}>
             <div className={styles.catch_food_item}>
               <Image src='/img/food/Brioche Versailles.png' className={styles.catch_drink_image} width={365} height={199} alt='Brioche Versailles'></Image>
-              <p className={styles.catch_food_name}>aaaaaa</p>
-              <p className={styles.catch_food_text}>eeeeeeee</p>
+              <p className={styles.catch_food_name}>木陰のトーストプレート</p>
+              <p className={styles.catch_food_text}>「パンは語らない。だが、すべてを覚えている。」<br/>天然酵母パン・自家製山葡萄ジャム・無塩バター・ハーブサラダ、朝の静寂をそのまま盛ったような一皿。</p>
             </div>
             <div className={styles.catch_food_item}>
               <Image src='/img/food/Fleur de Sel & Caramel.png' className={styles.catch_drink_image} width={365} height={199} alt='Fleur de Sel & Caramel'></Image>
-              <p className={styles.catch_food_name}>aaaaaa</p>
-              <p className={styles.catch_food_text}>eeeeeeee</p>
+              <p className={styles.catch_food_name}>朝焼けとしずくとバターのひと時</p>
+              <p className={styles.catch_food_text}>「喋るにはまだ早い朝に。」<br/>発酵バターとシロップ、しずくのような粗目の塩がゆっくり溶けていく、ふっくらとした一皿。静かに甘く、語りすぎない。</p>
             </div>
             <div className={styles.catch_food_item}>
               <Image src='/img/food/Soleil Noir Quiche.png' className={styles.catch_drink_image} width={365} height={199} alt='Soleil Noir Quiche'></Image>
-              <p className={styles.catch_food_name}>aaaaaa</p>
-              <p className={styles.catch_food_text}>eeeeeeee</p>
+              <p className={styles.catch_food_name}>簿暮のキッシュ</p>
+              <p className={styles.catch_food_text}>「夕暮れが森に溶ける、深い香りと仄かな痺れ。」<br/>竹炭と黒ごまペーストを練り込んだ生地にほうれん草・舞茸・山羊のチーズを詰め込んだ、山椒をアクセントに。しっとりとした森の香り立ち。</p>
             </div>
           </div>
           <Food></Food>
