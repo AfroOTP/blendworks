@@ -5,7 +5,7 @@ export default function Drink() {
     <main className={styles.main}>
       <div className={styles.drinkmenu_wrap}>
         <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>"あなた"のブレンド</span>
+          <span className={styles.drinkmenu_item_text}>あなた、のブレンド</span>
           <span className={styles.drinkmenu_item_dot}></span>
           <span className={styles.drinkmenu_item_price}>￥100(税込)</span>
         </div>
