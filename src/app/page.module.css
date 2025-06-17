@@ -104,8 +104,8 @@
 }
 
 .infomation_top_list_text {
-  padding-left: 20px;
-  font-size: 1.5rem;
+  padding-left: 10px;
+  font-size: 1.2rem;
   margin-top: 10px;
   background-image : linear-gradient(to right, #bd1616 2px, transparent 2px);
   background-size: 6px 2px;
@@ -201,6 +201,7 @@
     z-index: 10;
     padding-left: 0px;
     text-align: center;
+    width: 100%;
   }
 
   .storys_title {
@@ -253,7 +254,7 @@
   position: relative;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   margin-left: calc(-50vw + 49%);
   padding-left: 24px;
   margin-top: 100px;
@@ -277,6 +278,7 @@
   display: flex;
   flex-direction: column;
   z-index: 10;
+  padding-left: 90px;
 }
 
 .about_image {
@@ -289,11 +291,17 @@
 }
 
 .about_title {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #492c00;
+  width: auto;
 }
 
 .about_text {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+.about_time {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -303,7 +311,7 @@
     width: 100%;
     margin-left: 0;
     margin-top: 50px;
-    padding: 20;
+    padding: 20px;
     z-index: 10;
     background-color: rgb(254, 248, 225);
   }
@@ -318,6 +326,7 @@
     z-index: 10;
     padding-left: 0px;
     text-align: center;
+    width: 100%;
   }
 
   .about_image {
@@ -593,7 +602,8 @@
   z-index: 10;
   width: 100%;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 20px auto 100px;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 
@@ -617,10 +627,10 @@
     z-index: 10;
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 0px auto;
     overflow: hidden;
   }
-  
+
   .iframe_style iframe {
     width: 100%;
     height: 400px;

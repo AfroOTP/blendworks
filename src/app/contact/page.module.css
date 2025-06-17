@@ -44,6 +44,7 @@
 
 .contacttext {
   font-size: 1rem;
+  margin-bottom: 30px;
 }
 
 .radiobutton_container_wrap {
@@ -171,7 +172,7 @@
 
 .confirmation {
   display: flex;
-  padding: 20px;
+  padding: 20px 50px;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -305,7 +306,7 @@
   .confirmation_container {
     width: 100%;
     margin: 40px auto;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .error_container {
@@ -319,5 +320,66 @@
     width: 100%;
     color: red;
     margin-bottom: 16px;
+  }
+
+  .confirmation {
+    display: flex;
+    padding: 20px 50px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #492c00 !important;
+    border: 1px solid #000000;
+    border-radius: 3rem;
+    color: rgb(255, 249, 229);
+    cursor: pointer;
+  }
+
+  .confirmation:hover {
+    display: flex;
+    padding: 20px 50px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #494949 !important;
+    border: 1px solid #000000;
+    border-radius: 3rem;
+    color: rgb(255, 249, 229);
+  }
+
+  .main {
+    max-width: 1200px;
+    margin: 200px auto 200px auto;
+    background-color: rgb(254, 248, 225);
+    border-radius: 30px;
+    padding: 100px 100px 50px 100px;
+    color: #492c00;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    max-width: 1200px;
+    margin: 200px auto 200px auto;
+    background-color: rgb(254, 248, 225);
+    border-radius: 30px;
+    padding: 100px 15px 50px 15px;
+    color: #492c00;
+  }
+  .form_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 0px;
+    gap: 0px;
+  }
+  .form_wrap_error {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0px;
   }
 }

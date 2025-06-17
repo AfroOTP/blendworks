@@ -5,52 +5,52 @@ export default function Food() {
     <main className={styles.main}>
       <div className={styles.foodmenu_wrap}>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>111111111111111</span>
+          <span className={styles.foodmenu_item_text}>権三郎の山豆スープ</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥100(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>222222222222222</span>
-          <span className={styles.foodmenu_item_dot}></span>
-          <span className={styles.foodmenu_item_price}>￥200(税込)</span>
-        </div>
-        <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>333333333333333</span>
-          <span className={styles.foodmenu_item_dot}></span>
-          <span className={styles.foodmenu_item_price}>￥3,000(税込)</span>
-        </div>
-        <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>444444444444444</span>
+          <span className={styles.foodmenu_item_text}>雪下人参とクミンのスープ</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥4,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>555555555555555</span>
+          <span className={styles.foodmenu_item_text}>霧中のたまごサンドイッチ</span>
+          <span className={styles.foodmenu_item_dot}></span>
+          <span className={styles.foodmenu_item_price}>￥200(税込)</span>
+        </div>
+        <div className={styles.foodmenu_item}>
+          <span className={styles.foodmenu_item_text}>海霧サンドイッチ</span>
+          <span className={styles.foodmenu_item_dot}></span>
+          <span className={styles.foodmenu_item_price}>￥3,000(税込)</span>
+        </div>
+        <div className={styles.foodmenu_item}>
+          <span className={styles.foodmenu_item_text}>薪と知恵の記憶のサンドイッチ</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥5,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>666666666666666</span>
+          <span className={styles.foodmenu_item_text}>ほうじ茶と玄米焼きおにぎりスープ</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥6,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>77777777777777</span>
+          <span className={styles.foodmenu_item_text}>灰色のきのこごはん</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥7,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>888888888</span>
+          <span className={styles.foodmenu_item_text}>陽だまりのバジルトースト</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥8,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>9999</span>
+          <span className={styles.foodmenu_item_text}>雨読の琥珀寄せ</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥9,999,000(税込)</span>
         </div>
         <div className={styles.foodmenu_item}>
-          <span className={styles.foodmenu_item_text}>1010101010101010101010</span>
+          <span className={styles.foodmenu_item_text}>静寂に溶ける、白あんの月</span>
           <span className={styles.foodmenu_item_dot}></span>
           <span className={styles.foodmenu_item_price}>￥10,000(税込)</span>
         </div>

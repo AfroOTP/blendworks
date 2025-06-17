@@ -43,8 +43,8 @@ export default function Contact() {
         <h1 className={styles.title}>CONTACT</h1>
         <p className={styles.title_ruby}>お問い合わせ</p>
         <div className={styles.contacttextbox}>
-          <p className={styles.contacttext}>下記フォームに必要事項を入力して送信してください。</p>
-          <p>通常、3営業日以内にご連絡させていただきます。</p>
+          <p className={styles.contacttext}>下記フォームに必要事項を入力して送信してください。
+          <br/>通常、3営業日以内にご連絡させていただきます。</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={errors.name ? styles.form_wrap_error : styles.form_wrap}>
