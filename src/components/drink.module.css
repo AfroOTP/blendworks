@@ -61,4 +61,7 @@
 
 @media (max-width: 375px) {
 
+	.drinkmenu_item_text {
+		font-size: 0.8rem;
+	}
 }
