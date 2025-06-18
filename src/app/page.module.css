@@ -31,7 +31,7 @@
   aspect-ratio: 16 / 9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .mainvisual_title {
     width: 80%;
     max-width: 500px;
@@ -103,7 +103,7 @@
   background-position: left bottom;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .infomation_top_list {
     display: flex;
     flex-direction: column;
@@ -178,6 +178,7 @@
 }
 
 .storys_container {
+  position: relative;
   position: absolute;
   background-color: rgb(254, 248, 225);
   border-radius: 30px 0 0 30px;
@@ -193,7 +194,8 @@
   flex-direction: column;
   z-index: 10;
   padding-left: 100px;
-  width: 55%;
+  padding-right: 10px;
+  width: 40%;
 }
 
 .storys_title {
@@ -204,20 +206,20 @@
 
 .storys_text {
   font-size: 1rem;
+  line-height: 1.5;
 }
 .storys_donguri {
   font-weight: bold;
 }
 
 .storys_image {
-  width: 40%;
+  width: 60%;
   aspect-ratio: 16 / 9;
-  max-width: 600px;
   height: 100%;
   z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .storys_wrap {
     position: relative;
     width: 100%;
@@ -239,6 +241,7 @@
     flex-direction: column;
     z-index: 10;
     padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
     width: 100%;
   }
@@ -319,14 +322,14 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  z-index: 10;
+  padding-right: 100px;
   padding-left: 10px;
+  z-index: 10;
 }
 
 .about_image {
   width: 60%;
   aspect-ratio: 16 / 9;
-  max-width: 600px;
   height: 100%;
   z-index: 10;
   margin-left: 15px;
@@ -340,6 +343,7 @@
 
 .about_text {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .about_time {
@@ -347,7 +351,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .about_wrap {
     position: relative;
     display: block;
@@ -368,6 +372,7 @@
     flex-direction: column;
     z-index: 10;
     padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
     width: 100%;
   }
@@ -464,7 +469,7 @@
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .catch_drink_name {
     font-size: 1.5rem;
     text-align: center;
@@ -542,7 +547,7 @@
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .catch_food_name {
     font-size: 1.5rem;
     text-align: center;
@@ -676,7 +681,7 @@
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contact_wrap {
     display: flex;
     max-width: 1200px;

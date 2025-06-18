@@ -239,7 +239,7 @@
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
   .radiobutton_container_wrap {
     margin: auto;
     margin-top: 100px;
