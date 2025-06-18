@@ -22,7 +22,8 @@
 
 .mainvisual_title {
   position: absolute;
-  width: auto;
+  width: 70%;
+  max-width: 800px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -154,7 +155,7 @@
   flex-direction: column;
   z-index: 10;
   padding-left: 100px;
-  width: 50%;
+  width: 55%;
 }
 
 .storys_title {
@@ -171,10 +172,10 @@
 }
 
 .storys_image {
-  flex-basis: 40%;
+  width: 40%;
   aspect-ratio: 16 / 9;
-  width: auto;
-  height: auto;
+  max-width: 600px;
+  height: 100%;
   z-index: 10;
 }
 
@@ -210,13 +211,15 @@
 
   .storys_text {
     font-size: 1rem;
+    margin-bottom: 50px;
   }
 
   .storys_image {
     display: flex;
     flex-basis: none;
     aspect-ratio: 16 / 9;
-    width: auto;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     margin: auto;
     padding-top: 30px;
@@ -229,9 +232,10 @@
     display: flex;
     flex-basis: none;
     aspect-ratio: 16 / 9;
-    width: auto;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 0;
     z-index: 10;
   }
@@ -274,24 +278,24 @@
 }
 
 .about_text_wrap {
-  flex-basis: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   z-index: 10;
-  padding-left: 90px;
+  padding-left: 10px;
 }
 
 .about_image {
-  flex-basis: 40%;
+  width: 40%;
   aspect-ratio: 16 / 9;
-  width: auto;
-  height: auto;
+  max-width: 600px;
+  height: 100%;
   z-index: 10;
   margin-left: 15px;
 }
 
 .about_title {
-  font-size: 1.3rem;
+  font-size: 2rem;
   border-bottom: 2px solid #492c00;
   width: auto;
 }
@@ -303,6 +307,7 @@
 .about_time {
   font-weight: bold;
 }
+
 
 @media (max-width: 768px) {
   .about_wrap {
@@ -333,7 +338,8 @@
     display: block;
     flex-basis: none;
     aspect-ratio: 16 / 9;
-    width: auto;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     margin: auto;
     padding-top: 30px;
@@ -346,6 +352,7 @@
 
   .about_text {
     font-size: 1rem;
+    margin-bottom: 50px;
   }
 }
 
@@ -401,10 +408,14 @@
   display: flex;
   flex-direction: column;
   width: 360px;
+  max-width: 100%;
 }
 
 .catch_drink_image {
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
 }
 
 .catch_drink_name {
@@ -431,9 +442,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin: 0 auto 50px auto;
     max-width: 1200px;
+    padding: 0 20px;
+  }
+  .catch_drink_item {
+    width: 100%;
+    max-width: 300px;
   }
   .catch_drink_name {
     font-size: 1.5rem;
@@ -470,11 +486,14 @@
   display: flex;
   flex-direction: column;
   width: 360px;
+  max-width: 100%;
 }
 
 .catch_food_image {
-  aspect-ratio: 1 / 1;
+  width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
 }
 
 .catch_food_name {
@@ -501,10 +520,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin: 0 auto 100px auto;
-    padding-top: 0;
+    padding: 0 20px;
     color: #492c00;
+  }
+  .catch_food_item {
+    width: 100%;
+    max-width: 300px;
   }
   .catch_food_title {
     font-size: 3rem;
@@ -609,7 +632,9 @@
 
 .iframe_style iframe {
   width: 100%;
-  height: 600px;
+  height: 50vw;
+  min-height: 300px;
+  max-height: 600px;
   border: none;
 }
 
@@ -633,7 +658,9 @@
 
   .iframe_style iframe {
     width: 100%;
-    height: 400px;
+    height: 60vw;
+    min-height: 250px;
+    max-height: 400px;
     border: none;
   }
 }
@@ -670,6 +697,14 @@
     color: rgb(254, 248, 225);
     margin-top: 20px;
   }
+  .iframe_style iframe {
+    width: 100%;
+    height: 70vw;
+    min-height: 200px;
+    max-height: 300px;
+    border: none;
+  }
+  
   .main {
     margin: auto;
     margin-bottom: 0;
