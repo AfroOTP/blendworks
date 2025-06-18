@@ -112,29 +112,27 @@ export default function Home() {
           <Food></Food>
         </FadeInSection>
         <FadeInSection direction="fade" delay={0.1} className={styles.contact_container} options={{ threshold: 0.0 }} >
+          <p className={styles.title}>アクセス</p>
           <div  id="contact" className={styles.contact_wrap}>
             <div className={styles.contact_left_wrap}>
-              <p className={styles.contact_left_title}>お問い合わせ</p>
-              <p className={styles.contact_left_text}>ドングリを辿ってもたどり着けなかった貴方へ</p>
-              <Link className={styles.contact_left_button} href="/contact">お問い合わせフォームへ</Link>
+              <div className={styles.iframe_style}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6733.774549994488!2d139.80282561042605!3d35.70902076912543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1748518394631!5m2!1sja!2sjp?wmode=transparent" width="800" height="500" loading="lazy"></iframe>
+              </div>
             </div>
             <div className={styles.contact_right_wrap}>
-              <div className={styles.contact_right_mail}>
-                <p>メール</p>
-                <p className={styles.contact_text_border}>dammy@gmial.cam</p>
-              </div>
               <div className={styles.contact_right_tell}>
-                <p>電話</p>
+                <p className={styles.contact_right_tell}>電話</p>
                 <p className={styles.contact_text_border}>000-0000-0000</p>
               </div>
               <div className={styles.contact_right_address}>
-                <p>住所</p>
+                <p className={styles.contact_right_address}>住所</p>
                 <p className={styles.contact_text_border}>岩索県蛇美市似世藻野区3-3-3</p>
               </div>
+              <div className={styles.contact_contact}>
+                <p >ドングリを辿ってもたどり着けなかった貴方へ</p>
+                <Link className={styles.contact_left_button} href="/contact">お問い合わせフォームへ</Link>
+              </div>
             </div>
-          </div>
-          <div className={styles.iframe_style}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6733.774549994488!2d139.80282561042605!3d35.70902076912543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1748518394631!5m2!1sja!2sjp?wmode=transparent" width="1200" height="600" loading="lazy"></iframe>
           </div>
         </FadeInSection>
       </div>

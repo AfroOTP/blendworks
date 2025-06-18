@@ -55,7 +55,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .header {
         height: var(--header-height);
     }

@@ -361,7 +361,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .main {
     max-width: 1200px;
     margin: 200px auto 200px auto;

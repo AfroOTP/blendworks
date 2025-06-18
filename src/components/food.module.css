@@ -60,7 +60,7 @@ font-size: 1rem;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
 	.foodmenu_wrap {
 		display: flex;
 		flex-wrap: wrap;
