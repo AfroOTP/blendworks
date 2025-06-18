@@ -35,12 +35,12 @@ export default function Home() {
               </ul>
             </div>
           </FadeInSection>
-        </div>
+        </div>s
         <div id="about">
           <FadeInSection direction="up" delay={0} className={styles.storys_wrap} options={{ threshold: 0.0 }} >
             <div className={styles.storys_container}></div>
             <div className={styles.storys_text_wrap}>
-              <p className={styles.storys_title}>BlendWorks Storys</p>
+              <p className={styles.storys_title}>BlendWorksのお話</p>
               <p className={styles.storys_text}>
                 山あいに、地図にない道を辿っていくと、ふと現れる木造の小さな建物。そこが、森山権三郎が創立したカフェ「BlendWorks」だ。看板にはひっそりと、手彫りの文字でこう書かれている。
                 <span className={styles.storys_donguri}><br/>「どんぐりを辿っても着きません」</span>
@@ -58,14 +58,16 @@ export default function Home() {
           <Image src='/img/coffe.png' className={styles.about_image} width={1408} height={768} alt='cafe_img'></Image>
           <div className={styles.about_text_wrap}>
             <p className={styles.about_title}>BLENDとは</p>
-            <p className={styles.about_text}>BlendWorksの珈琲は特別だ。<br/>
-                                            豆の産地は世界中だが、焙煎は一点の雑味も許さぬ精度で行われる。ひとつの豆が持つ物語を、もう一つの豆と結び合わせ、ひとつの香りとする。
-                                            その技はまるで、人と人との関係を静かに、しかし確かに結び直すような、禅にも似た行い。
-                                            客が席につくと、森山が静かに問う。<span className={styles.about_time}><br/>「今日は、どんな一日でしたか」<br/></span>
-                                            その一言をもとに、豆の種類、挽き方、温度、抽出時間を全て変え、その人だけのブレンドを作り出す。
-                                            「心の隙間に、一杯の珈琲が入れば、それでいい」
-                                            彼はそう言うが、何かを癒やされた客たちは口を揃えて言う。
-                                            「あの人は、心のブレンドマスターだ」と。</p>
+            <p className={styles.about_text}>
+              BlendWorksの珈琲は特別だ。<br/>
+              豆の産地は世界中だが、焙煎は一点の雑味も許さぬ精度で行われる。ひとつの豆が持つ物語を、もう一つの豆と結び合わせ、ひとつの香りとする。
+              その技はまるで、人と人との関係を静かに、しかし確かに結び直すような、禅にも似た行い。
+              客が席につくと、森山が静かに問う。
+              <span className={styles.about_time}><br/>「今日は、どんな一日でしたか」<br/></span>
+              その一言をもとに、豆の種類、挽き方、温度、抽出時間を全て変え、その人だけのブレンドを作り出す。
+              「心の隙間に、一杯の珈琲が入れば、それでいい」
+              彼はそう言うが、何かを癒やされた客たちは口を揃えて言う。
+              「あの人は、心のブレンドマスターだ」と。</p>
           </div>
         </FadeInSection>
         <FadeInSection direction="fade" delay={0.1} className={styles.drink_container} options={{ threshold: 0.0 }} >
