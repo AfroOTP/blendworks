@@ -129,7 +129,7 @@ export default function Home() {
                 <p className={styles.contact_text_border}>岩索県蛇美市似世藻野区3-3-3</p>
               </div>
               <div className={styles.contact_contact}>
-                <p >ドングリを辿ってもたどり着けなかった貴方へ</p>
+                <p className={styles.contact_right_tell}>ドングリを辿ってもたどり着けなかった貴方へ</p>
                 <Link className={styles.contact_left_button} href="/contact">お問い合わせフォームへ</Link>
               </div>
             </div>
