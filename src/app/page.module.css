@@ -67,17 +67,9 @@
   color: #492c00;
 }
 
-.infomation_top_text_left {
-  flex-basis: 50%;
-}
-
-.infomation_top_text_right {
-  flex-basis: 50%;
-}
-
 .infomation_top_title {
   position: relative;
-  flex-basis: 100%;
+  width: 100%;
   font-size: 1.5rem;
 }
 .infomation_top_title::after {
@@ -90,15 +82,11 @@
   border-image: linear-gradient(to right, #d20c0c, rgba(0,0,0,0)) 1;
 }
 
-.infomation_boder {
-  flex-basis: 50%;
-}
-
 .infomation_top_list {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  flex-basis: 50%;
+  margin-left: 50%;
+  width: 50%;
   border-left: 2px solid red;
   list-style-type: none;
   border-image: linear-gradient(to top, #d20c0c, rgba(0,0,0,0)) 1;
@@ -114,17 +102,58 @@
   background-position: left bottom;
 }
 
+@media (max-width: 768px) {
+  .infomation_top_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: auto;
+    width: auto;
+    border-left: 2px solid red;
+    list-style-type: none;
+    border-image: linear-gradient(to top, #d20c0c, rgba(0,0,0,0)) 1;
+  }
+  .infomation_top_title {
+    position: relative;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .infomation_top_title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #d20c0c, rgba(0,0,0,0)) 1;
+  }
+}
+
 @media (max-width: 375px) {
   .infomation_wrap {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     max-width: 1400px;
-    padding: 50px 40px;
+    padding: 50px 50px;
     margin-top: 80px;
     color: #492c00;
   }
-
+  .infomation_top_title {
+    position: relative;
+    margin: auto;
+    width: auto;
+    font-size: 1.5rem;
+    }
+  .infomation_top_title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #d20c0c) 1;
+  }
 }
 
 
@@ -278,7 +307,7 @@
 }
 
 .about_text_wrap {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -286,7 +315,7 @@
 }
 
 .about_image {
-  width: 40%;
+  width: 60%;
   aspect-ratio: 16 / 9;
   max-width: 600px;
   height: 100%;
@@ -681,16 +710,17 @@
   }
 
   .contact_left_title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-left: 5px;
   }
 
   .contact_left_text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 5px;
   }
   .contact_left_button {
     padding: 15px 15px;
+    font-size: 0.8rem;
     margin-left: 5px;
     width: fit-content;
     background-color: #492c00;
@@ -704,7 +734,7 @@
     max-height: 300px;
     border: none;
   }
-  
+
   .main {
     margin: auto;
     margin-bottom: 0;
