@@ -43,7 +43,7 @@
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header_logo_image {
         height: 35px;
         max-height: 35px;
