@@ -24,8 +24,6 @@ export default function Home() {
         <div id="news">
           <FadeInSection direction="fade" delay={0} className={styles.infomation} options={{ threshold: 0.0 }} >
             <div className={styles.infomation_wrap}>
-              <div className={styles.infomation_top_text_left}></div>
-              <div className={styles.infomation_top_text_right}></div>
               <div className={styles.infomation_top_title}>お知らせ</div>
               <ul className={styles.infomation_top_list}>
                 <li className={styles.infomation_top_list_text}>今月の営業日</li>
