@@ -1,60 +1,19 @@
 import styles from './drink.module.css'
+import MenuList from './MenuList'
+
+const drinkItems = [
+  { text: 'あなた、のブレンド', price: '￥100(税込)' },
+  { text: '朝靄ブレンド', price: '￥200(税込)' },
+  { text: '深山ブレンド', price: '￥3,000(税込)' },
+  { text: '風露のハーブティー', price: '￥5,000(税込)' },
+  { text: '露草のブルーティー', price: '￥6,000(税込)' },
+  { text: '朧ミルク', price: '￥7,000(税込)' },
+  { text: '翡翠ライムソーダ', price: '￥8,000(税込)' },
+  { text: '林檎と樹皮のホットスパイス', price: '￥4,000(税込)' },
+  { text: '陽果サンセットミックス', price: '￥9,999,000(税込)' },
+  { text: '柑と雪スムージー', price: '￥10,000(税込)' }
+];
 
 export default function Drink() {
-  return(
-    <main className={styles.main}>
-      <div className={styles.drinkmenu_wrap}>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>あなた、のブレンド</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥100(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>朝靄ブレンド</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥200(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>深山ブレンド</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥3,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>風露のハーブティー</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥5,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>露草のブルーティー</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥6,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>朧ミルク</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥7,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>翡翠ライムソーダ</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥8,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>林檎と樹皮のホットスパイス</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥4,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>陽果サンセットミックス</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥9,999,000(税込)</span>
-        </div>
-        <div className={styles.drinkmenu_item}>
-          <span className={styles.drinkmenu_item_text}>柑と雪スムージー</span>
-          <span className={styles.drinkmenu_item_dot}></span>
-          <span className={styles.drinkmenu_item_price}>￥10,000(税込)</span>
-        </div>
-      </div>
-    </main>
-  );
+  return <MenuList items={drinkItems} styles={styles} />;
 }

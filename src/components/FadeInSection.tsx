@@ -37,9 +37,8 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({
             case 'right':
                 return 'translateX(-50px)';
             case 'fade':
-                return 'translate(0, 0)';
             default:
-                return 'translateY(50px)';
+                return 'translate(0, 0)';
         }
     };
 
